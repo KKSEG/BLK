@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>BORANG LAPORAN KEROSAKAN (BLK)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 12px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 11px;
+            color: #333;
+        }
+        .checkbox-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 2px;
+            gap: 20px;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2px;
+        }
+        label {
+            font-weight: bold;
+            font-size: 10px;
+            width: 40%;
+        }
+        input[type="text"], input[type="date"], textarea {
+            width: 60%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+            background-color: #f0f0f0;
+        }
+        textarea {
+            height: 40px;
+            resize: vertical;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            font-size: 10px;
+            border: none;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        @media print {
+            body {
+                font-size: 14px;
+            }
+            h2, h3, p, label {
+                font-size: 14px;
+            }
+            input[type="text"], input[type="date"], textarea {
+                font-size: 14px;
+            }
+            button {
+                display: none;
+            }
+            table {
+                border: none;
+            }
+            th, td {
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>KOLEJ KOMUNIT SEGAMAT<br>
+        KEMENTERIAN PENDIDIKAN TINGGI<br>
+        BORANG LAPORAN KEROSAKAN (BLK)</h2>
+
+        <h3>A. KATEGORI KEROSAKAN</h3>
+        <p>(Sila tandakan (√))</p>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Kerosakan peralatan makmal/ bengkel</label>
+            <label><input type="checkbox"> Kerosakan komputer dan perkakasan</label>
+            <label><input type="checkbox"> Kerosakan peralatan/ infrastruktur</label>
+        </div>
+
+        <div class="form-group">
+            <label for="tarikh-kerosakan">Tarikh Kerosakan:</label>
+            <input type="text" id="tarikh-kerosakan" name="tarikh-kerosakan">
+        </div>
+
+        <div class="form-group">
+            <label for="unit">Unit:</label>
+            <input type="text" id="unit" name="unit">
+        </div>
+
+        <div class="form-group">
+            <label for="lokasi">Lokasi:</label>
+            <input type="text" id="lokasi" name="lokasi">
+        </div>
+
+        <div class="form-group">
+            <label for="butiran-kerosakan">Butiran Kerosakan Peralatan:</label>
+            <textarea id="butiran-kerosakan" name="butiran-kerosakan"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="dilapor-oleh">Dilaporkan oleh,</label>
+        </div>
+
+        <div class="form-group">
+            <label for="tarikh-a">..........................................................</label>
+        </div>
+        <div class="form-group">
+            <label for="">(‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ )**</label>
+        </div>
+        <div class="form-group">
+            <label for="tarikh-a">Tarikh:</label>
+            <input type="text" name="tarikh-a" value="">
+        </div>
+
+        <p>**Pelapor hendaklah melengkapkan dan menandatangani ruangan yang disediakan</p>
+
+        <h3>B. LAPORAN PENOLONG JURUTERA / PENOLONG PEGAWAI TEKNOLOGI MAKLUMAT</h3>
+        <p>Tindakan Penolong Jurutera:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Bil</th>
+                    <th>Kategori Kerosakan</th>
+                    <th>Tandakan (√)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>a</td>
+                    <td>Kerosakan yang boleh dibaiki terus</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>Kerosakan yang boleh dibaiki tetapi memerlukan perolehan alat ganti</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td>Kerosakan yang perlu dibaiki oleh pembekal luar.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td>Kerosakan yang tidak ekonomi untuk dibaiki.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-group">
+            <label for="catatan-b">Catatan/ ulasan Penolong Jurutera / Penolong Pegawai Teknologi Maklumat:</label>
+            <textarea id="catatan-b" name="catatan-b"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="tarikh-a">..........................................................</label>
+        </div>
+        <div class="form-group">
+            <label for="">(‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ )**</label>
+        </div>
+        <div class="form-group">
+            <label for="tarikh-a">Tarikh:</label>
+            <input type="text" name="tarikh-a" value="">
+        </div>
+
+        <p>**Juruteknik hendaklah melengkapkan dan menandatangani ruangan yang disediakan</p>
+
+        <h3>C. PENGESAHAN TPP / PEGAWAI PEMBANGUNAN</h3>
+        <div class="form-group">
+            <label for="ulasan-c">Ulasan dan Pengesahan Pegawai (jika perlu):</label>
+            <textarea id="ulasan-c" name="ulasan-c"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="tarikh-a">..........................................................</label>
+        </div>
+        <div class="form-group">
+            <label for="">(‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ )</label>
+        </div>
+        <div class="form-group">
+            <label for="tarikh-a">Tarikh:</label>
+            <input type="text" name="tarikh-a" value="">
+        </div>
+
+        <p>** Sila lampirkan bukti bergambar sekiranya ada bagi tujuan rekod</p>
+
+        <center>
+        <button type="button" onclick="document.querySelector('form').classList.toggle('print'); window.print();">Print</button>
+        </center>
+    </form>
+</body>
+</html>
